@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OhEunTaek/salt_react_pf/static/css/main.2049c3ca.css",
+    "main.js": "/OhEunTaek/salt_react_pf/static/js/main.e5aa38c8.js",
+    "index.html": "/OhEunTaek/salt_react_pf/index.html",
+    "main.2049c3ca.css.map": "/OhEunTaek/salt_react_pf/static/css/main.2049c3ca.css.map",
+    "main.e5aa38c8.js.map": "/OhEunTaek/salt_react_pf/static/js/main.e5aa38c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2049c3ca.css",
+    "static/js/main.e5aa38c8.js"
+  ]
+}
