@@ -1,0 +1,85 @@
+.content {
+	figure {
+		width: 100%;
+		height: 30rem;
+		background-color: $colorLightGray;
+		opacity: 0;
+		transition: 0.5s;
+
+		.inner {
+			@include inner;
+			position: relative;
+
+			h1.pageTitle {
+				font-size: 10rem;
+				letter-spacing: 0.7rem;
+				color: $colorWhite;
+				background: transparent;
+				position: absolute;
+				left: 0;
+				bottom: -1.7rem;
+			}
+		}
+	}
+
+	> .inner {
+		@include inner;
+		min-height: 30rem;
+		margin: 10rem auto;
+		opacity: 0;
+		transform: translateY(10rem);
+		transition: opacity $tranDefault, transform $tranSlow;
+	}
+
+	&.on {
+		figure {
+			opacity: 1;
+		}
+
+		> .inner {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+
+@include tablet {
+	.content {
+		figure {
+			height: 20rem;
+
+			.inner {
+				width: 100%;
+				padding: 0 3rem;
+
+				h1.pageTitle {
+					left: 3rem;
+					font-size: 8vw;
+					margin-bottom: 0;
+					bottom: -0.5rem;
+				}
+			}
+		}
+
+		> .inner {
+			width: 100%;
+			margin: 8rem auto;
+			padding: 0 3rem;
+		}
+	}
+}
+
+@include mobile {
+	.content {
+		figure {
+			height: 15rem;
+
+			.inner {
+				h1.pageTitle {
+					font-size: 10vw;
+					bottom: 0.5rem;
+				}
+			}
+		}
+	}
+}
